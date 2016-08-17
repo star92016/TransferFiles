@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.application.gritstone.transferfiles.FileManager_PasteActivity">
+
+    <RelativeLayout
+        android:background="#F0FFFF"
+        android:id="@+id/top_menu2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:background="#F0FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="复制"
+            android:textColor="#ec000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:background="#F0FFFF"
+            android:id="@+id/createfolder2"
+            android:src="@drawable/createfolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:onClick="createfolder2"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/divide1_1"
+        android:layout_below="@id/top_menu2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2F4F4F"/>
+
+    <TextView
+        android:background="#F0FFFF"
+        android:layout_below="@id/divide1_1"
+        android:id="@+id/title_path1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/divide2_1"
+        android:layout_below="@id/title_path1_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2F4F4F"/>
+
+
+    <ListView
+        android:background="#F5FFFA"
+        android:layout_below="@id/divide2_1"
+        android:id="@+id/listview1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        ></ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粘贴到"
+            android:onClick="paste_to"
+            android:layout_toLeftOf="@+id/center"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            />
+        <ImageView
+            android:id="@+id/center"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#2F4F4F"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_toRightOf="@+id/center"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:onClick="cancel"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

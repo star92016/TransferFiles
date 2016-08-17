@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.gritstone.transferfiles">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LogoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FileManageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SendBluetoothFirstActivity" />
+        <activity android:name=".SendWifiActivity" />
+        <activity android:name=".SendWifiApActivity" />
+        <activity android:name=".ReceiveBluetoothActivity" />
+        <activity android:name=".ReceiveWifiActivity" />
+        <activity android:name=".ReceiveWifiApActivity" />
+        <activity android:name=".SendBluetoothSecondActivity" />
+        <activity android:name=".SendBluetoothThirdActivity" />
+        <activity android:name=".FileManager_PasteActivity" />
+        <activity android:name=".SendWifiAps_SecondActivity" />
+        <activity android:name=".SendWifi_SecondActivity" />
+        <activity android:name=".SendWifiAps_ThirdActivity" />
+        <activity android:name=".SendWifi_ThirdActivity" />
+        <activity android:name=".IntroduceActivity" />
+        <activity android:name=".OperationActivity" />
+        <activity android:name=".VersionActivity" />
+        <activity android:name=".AboutActivity" />
+    </application>
+
+</manifest>

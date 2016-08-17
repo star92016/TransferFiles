@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.application.gritstone.transferfiles.FileManageActivity">
+
+    <RelativeLayout
+        android:background="#97e1c7"
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="全部文件"
+            android:textColor="#ec000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+        <ImageButton
+            android:id="@+id/morefunction"
+            android:src="@drawable/morefuc"
+            android:background="#97e1c7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+
+            android:onClick="morefunction"/>
+        <ImageButton
+            android:id="@+id/createfolder"
+            android:src="@drawable/createfolder"
+            android:background="#97e1c7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/morefunction"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:onClick="createfolder"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/divide1"
+        android:layout_below="@id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2F4F4F"/>
+
+    <TextView
+        android:background="#97e1c7"
+        android:layout_below="@id/divide1"
+        android:id="@+id/title_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <ImageView
+        android:id="@+id/divide2"
+        android:layout_below="@id/title_path"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2F4F4F"/>
+
+
+    <ListView
+        android:background="#F5FFFA"
+        android:layout_below="@id/divide2"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/stat_notify_chat"
+            android:title="软件介绍" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="软件操作" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="版本概况" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_info_grey"
+            android:title="关于我们" />
+    </group>
+
+    <item android:title="系统软件设置">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_settings_white_48dp"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/common_full_open_on_phone"
+                android:title="退出" />
+        </menu>
+    </item>
+
+</menu>
